@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Aarya 💙</title>
+
+<style>
+
+body{
+margin:0;
+padding:0;
+height:100vh;
+background:linear-gradient(to bottom,#020111,#191970,#000);
+font-family: 'Poppins', sans-serif;
+overflow:hidden;
+color:white;
+}
+
+/* Stars */
+
+.star{
+position:absolute;
+width:2px;
+height:2px;
+background:white;
+animation:twinkle 3s infinite;
+}
+
+@keyframes twinkle{
+0%{opacity:0.2;}
+50%{opacity:1;}
+100%{opacity:0.2;}
+}
+
+/* Floating Emojis */
+
+.emoji{
+position:absolute;
+font-size:28px;
+animation:float 12s linear infinite;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+50%{
+opacity:1;
+}
+100%{
+transform:translateY(-10vh);
+opacity:0;
+}
+}
+
+/* Letter box */
+
+.container{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.letter{
+
+width:520px;
+padding:40px;
+
+background:rgba(255,255,255,0.08);
+
+border-radius:25px;
+
+backdrop-filter:blur(12px);
+
+box-shadow:0 0 50px rgba(255,255,255,0.2);
+
+animation:fadeIn 3s ease;
+}
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(60px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+h1{
+
+text-align:center;
+font-size:36px;
+color:#7ecbff;
+text-shadow:0 0 15px #7ecbff;
+
+}
+
+p{
+
+font-size:18px;
+line-height:1.8;
+margin-top:18px;
+
+}
+
+.quote{
+
+margin-top:25px;
+
+font-style:italic;
+
+color:#9ad7ff;
+
+text-shadow:0 0 10px #9ad7ff;
+
+}
+
+.signature{
+
+margin-top:35px;
+
+font-size:20px;
+
+text-align:right;
+
+color:#7ecbff;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Stars -->
+<script>
+
+for(let i=0;i<120;i++){
+
+let star=document.createElement("div")
+
+star.className="star"
+
+star.style.left=Math.random()*100+"%"
+
+star.style.top=Math.random()*100+"%"
+
+star.style.animationDelay=Math.random()*5+"s"
+
+document.body.appendChild(star)
+
+}
+
+</script>
+
+<!-- Floating Emojis -->
+
+<div class="emoji" style="left:10%">💙</div>
+<div class="emoji" style="left:20%">✨</div>
+<div class="emoji" style="left:30%">🧿</div>
+<div class="emoji" style="left:40%">💙</div>
+<div class="emoji" style="left:50%">✨</div>
+<div class="emoji" style="left:60%">🧿</div>
+<div class="emoji" style="left:70%">💙</div>
+<div class="emoji" style="left:80%">✨</div>
+
+<div class="container">
+
+<div class="letter">
+
+<h1>Dear Aarya 💙</h1>
+
+<p>
+Sometimes the night feels quieter than usual,
+and in that silence I realize how much I miss you.
+It’s strange how one person can live miles away
+yet still live inside every thought of mine.
+</p>
+
+<p>
+Every memory of you feels like a soft light
+in the darkest corners of my heart.
+Your smile, your voice, your presence—
+they are the little things that make my world feel complete.
+</p>
+
+<p>
+Maybe you don’t realize it,
+but you are the reason my heart
+still believes in something beautiful.
+Even when days feel empty,
+the thought of you fills them with meaning.
+</p>
+
+<div class="quote">
+“Some people come into your life quietly,
+but their presence becomes the loudest
+and most beautiful feeling your heart has ever known.”
+</div>
+
+<div class="quote">
+“You may not always see how deeply someone cares,
+but somewhere there is a heart
+that beats a little softer,
+a little warmer,
+just because you exist.”
+</div>
+
+<div class="quote">
+“And if one day you ever feel alone,
+just remember there is someone
+who silently carries your name
+in every dream and every prayer.”
+</div>
+
+<div class="signature">
+Forever yours,<br>
+Shravan 💙
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
